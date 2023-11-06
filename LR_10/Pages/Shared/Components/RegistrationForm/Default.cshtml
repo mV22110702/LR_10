@@ -1,0 +1,35 @@
+﻿@using LR_10.Pages
+@using LR_10.Models
+@model LR_10.Pages.IndexModel
+
+<h1>Registration form</h1>
+<form asp-page="Index" method="post" class="needs-validation">
+    <div class="mb-3">
+        <label asp-for="RegistrationForm.FirstName" class="form-label"></label>
+        <input asp-for="RegistrationForm.FirstName" class="form-control" />
+        <span asp-validation-for="RegistrationForm.FirstName" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="RegistrationForm.LastName" class="form-label"></label>
+        <input asp-for="RegistrationForm.LastName" class="form-control" />
+        <span asp-validation-for="RegistrationForm.LastName" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="RegistrationForm.Email" class="form-label"></label>
+        <input asp-for="RegistrationForm.Email" class="form-control" />
+        <span asp-validation-for="RegistrationForm.Email" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="RegistrationForm.ConsultationDate" class="form-label"></label>
+        <input asp-for="RegistrationForm.ConsultationDate" class="form-control" />
+        <span asp-validation-for="RegistrationForm.ConsultationDate" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="RegistrationForm.Product" class="form-label"></label>
+        <select asp-for="RegistrationForm.Product" asp-items="Html.GetEnumSelectList<ProductEnum>()" class="form-select"></select>
+        <span asp-validation-for="RegistrationForm.Product" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <input type="submit" value="Send" class="btn btn-success" />
+    </div>
+</form>

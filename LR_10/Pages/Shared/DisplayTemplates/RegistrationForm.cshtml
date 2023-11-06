@@ -1,0 +1,24 @@
+﻿@model LR_10.Models.RegistrationForm
+<div class="row flex-row justify-content-center mt-2">
+<h1>Registration Form Details</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">@Html.DisplayNameFor(model => model.FirstName)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.LastName)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.Email)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.ConsultationDate)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.Product)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Html.DisplayFor(model => model.FirstName)</td>
+            <td>@Html.DisplayFor(model => model.LastName)</td>
+            <td>@Html.DisplayFor(model => model.Email)</td>
+            <td>@Html.DisplayFor(model => model.ConsultationDate)</td>
+            <td>@Html.DisplayFor(model => model.Product)</td>
+        </tr>
+    </tbody>
+</table>
+</div>

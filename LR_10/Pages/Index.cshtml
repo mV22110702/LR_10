@@ -1,0 +1,13 @@
+﻿@page
+@model LR_10.Pages.IndexModel
+@{
+}
+
+<vc:registration-form/>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
